@@ -5,7 +5,8 @@
 
 ## Features
 
-This module...
+This module sets up a network and EKS cluster on AWS.  This is a simple base module that you can wrap from other 
+modules or take the outputs from and use in adjacent modules. 
 
 ## Terraform Versions
 
@@ -15,8 +16,8 @@ For Terraform v0.12.0+
 
 ```
 module "this" {
-    source = "github.com/insight-infrastructure/terraform-aws-eks-base"
-
+  source = "github.com/insight-infrastructure/terraform-aws-eks-base"
+  id = "awesome-cluster-id"
 }
 ```
 ## Examples

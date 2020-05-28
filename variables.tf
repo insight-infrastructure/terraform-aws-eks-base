@@ -21,7 +21,7 @@ variable "tags" {
 variable "worker_instance_type" {
   description = "The instance class for workers"
   type        = string
-  default     = "r5.large"
+  default     = "m5.large"
 }
 
 //variable "cluster_name" {
